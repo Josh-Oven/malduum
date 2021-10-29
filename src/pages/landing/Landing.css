@@ -1,0 +1,12 @@
+.landing-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+}
+
+.landing-title {
+  font-family: 'Press Start 2P';
+  font-weight: lighter;
+  cursor: pointer;
+}

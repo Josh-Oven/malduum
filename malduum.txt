@@ -1,0 +1,50 @@
+*************************************************************************
+MALDUUM
+*************************************************************************
+
+Create your own abilities
+
+Abilities:
+- strength (scales "mana" used)
+- class (attack, defence, healing, non-battle)
+- element (natural, poison, combos, etc.)
+- unique effects / utility
+
+Art:
+- 2bit?
+- no character
+- first person-ish
+
+Element Flow:
+- element type
+	- element identifier
+	- base element info
+  |
+  |
+  |
+  V
+- vessel type
+	- Ability
+	- host (staff, food, companion)
+	- raw energy
+  |
+  |
+  |
+  V
+- strength:
+	- can be controlled from 1 - max mana.
+	- scales effectiveness based off of player mana used.
+
+
+Creation Process:
+- select vessel to be created
+  |
+	|
+	|
+	V
+- select mats
+  |
+	|
+	|
+	V
+- insert element

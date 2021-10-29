@@ -1,0 +1,59 @@
+.text-box-wrapper {
+  position: absolute;
+  bottom: -50px;
+  /* border: 1px solid blue; */
+  width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 125px;
+  background-color: white;
+}
+
+.text-box-text {
+  font-family: 'Press Start 2P';
+  letter-spacing: 2px;
+  font-size: 15px;
+  /* margin-right: 5px; */
+  /* opacity: 0; */
+  animation: text-jump .5s infinite;
+  /* transition-duration: .2s; */
+  color: black;
+}
+
+.reg-text {
+  font-family: 'Press Start 2P';
+  letter-spacing: 2px;
+  font-size: 15px;
+  animation: text-jump .5s infinite;
+}
+
+.text-box-image {
+  position: fixed;
+}
+
+.jump-text-container {
+  margin-left: 10px;
+  width: 740px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  /* height: auto; */
+  /* border: 1px solid black; */
+}
+
+@keyframes text-jump {
+  0% {
+    transform: translateY(0%);
+
+  }
+
+  50% {
+    transform: translateY(3%);
+
+  }
+
+  1000% {
+    transform: translateY(0%);
+
+  }
+}

@@ -1,0 +1,47 @@
+.canvas-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.circle-background-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+  /* border: 10px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.circle-background {
+  position: fixed;
+  height: 100%;
+  /* border: 1px solid black; */
+  animation: rotate 60s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform:  rotate(0deg);
+  }
+
+  100% {
+    transform:  rotate(360deg)
+  }
+}
+
+/* @keyframes text-fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
