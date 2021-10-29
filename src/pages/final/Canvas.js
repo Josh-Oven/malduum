@@ -27,7 +27,9 @@ const Canvas = (props) => {
         <div className="chunk canvas-container">
           <DisplayCard data={newArcana} />
 
-          <TextBox text={`You've created ${newArcana.name}!`} color="" />
+          <TextBox>
+            <JumpText text={`You've created ${newArcana.name}!`} color="black" className="landing-title" />
+          </TextBox>
         </div>
     </React.Fragment>
   )

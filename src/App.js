@@ -7,6 +7,7 @@ import Storage from './pages/storage/Storage';
 import Canvas from './pages/final/Canvas';
 import TextBox from './components/textbox/TextBox';
 import JumpText from './components/text/JumpText';
+import Title from './components/text/Title';
 import Element from './pages/element/Element';
 
 const App = (props) => {
@@ -27,7 +28,7 @@ const App = (props) => {
         <div className="page-background">
           <Landing />
           <div className="landing-title-wrapper" onClick={e => setMenu('armory')}>
-            <JumpText text="Start" fontSize="23px" className="landing-title"/>
+            <Title text="Start" fontSize="23px" className="landing-title"/>
           </div>
         </div>
       </div>
@@ -38,7 +39,7 @@ const App = (props) => {
         <div className="page-background">
           <Armory callback={setMenu} vesselCallback={setVessel}/>
           <TextBox>
-            <JumpText ref={currentText} text="Choose your vessel!" color="black" />
+            <Title ref={currentText} text="Choose your vessel!" color="black" className="landing-title"/>
           </TextBox>
         </div>
       </div>
@@ -49,7 +50,7 @@ const App = (props) => {
         <div className="page-background">
           <Storage callback={setMenu} storageCallback={setMats}/>
           <TextBox>
-            <JumpText ref={currentText} text="What ingredients will you use?" color="black" />
+            <Title ref={currentText} text="What ingredients will you use?" color="black" className="landing-title"/>
           </TextBox>
         </div>
       </div>
@@ -60,7 +61,7 @@ const App = (props) => {
         <div className="page-background">
           <Element callback={setMenu} elementCallback={setElement}/>
           <TextBox>
-            <JumpText ref={currentText} text="What ingredients will you use?" color="black" />
+            <Title ref={currentText} text="Imbue your weapon with powerful magic!" color="black" className="landing-title"/>
           </TextBox>
         </div>
       </div>
