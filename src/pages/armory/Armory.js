@@ -19,14 +19,12 @@ const Armory = (props) => {
           <img src="./svg/staff-tall.svg" className="shelf-image"/>
         </div>
 
-
-        <div className="shelf" onClick={e => {props.callback('storage'); props.vesselCallback('staff')}}>
-          <img src="./svg/staff-tall.svg" className="shelf-image"/>
+        <div className="shelf" onClick={e => {props.callback('storage'); props.vesselCallback('wand')}}>
+          <img src="./svg/wand-tall.svg" className="shelf-image"/>
         </div>
 
-
-        <div className="shelf" onClick={e => {props.callback('storage'); props.vesselCallback('staff')}}>
-          <img src="./svg/staff-tall.svg" className="shelf-image"/>
+        <div className="shelf" onClick={e => {props.callback('storage'); props.vesselCallback('claymore')}}>
+          <img src="./svg/claymore-tall.svg" className="shelf-image"/>
         </div>
 
       </div>

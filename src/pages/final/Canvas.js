@@ -10,11 +10,28 @@ import JumpText from '../../components/text/JumpText';
 import DisplayCard from '../../components/DisplayCard/DisplayCard';
 let Arcana = alchemy.Arcana;
 let Staff = vessels.Staff;
+let Claymore = vessels.Claymore;
+let Wand = vessels.Wand;
+
+let vessel;
+let newArcana;
 
 
 const Canvas = (props) => {
-  let staff = new Staff(props.m)
-  let newArcana = new Arcana(props.e, staff, 500)
+  if(props.v === 'staff'){
+    vessel = new Staff(props.m)
+    newArcana = new Arcana(props.e, vessel, 500)
+  }
+
+  if(props.v === 'claymore'){
+    vessel = new Claymore(props.m)
+    newArcana = new Arcana(props.e, vessel, 500)
+  }
+
+  if(props.v === 'wand'){
+    vessel = new Wand(props.m)
+    newArcana = new Arcana(props.e, vessel, 500)
+  }
 
   // console.log(newArcana)
 

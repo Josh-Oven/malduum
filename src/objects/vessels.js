@@ -3,7 +3,9 @@
 import * as materials from './materials';
 
 export {
-  Staff
+  Staff,
+  Claymore,
+  Wand
 }
 
 const vesselList = ['weapons', 'food', 'companions', 'object']
@@ -14,6 +16,24 @@ class Staff {
     this.tier = getTier(mats)
     this.bonus = this.tier * 10;
     this.image = "./svg/staff-vine.svg";
+  }
+}
+
+class Claymore {
+  constructor(mats){
+    this.name = `Claymore of the ${getName(mats)}`
+    this.tier = getTier(mats)
+    this.bonus = this.tier * 10;
+    this.image = "./svg/claymore-short.svg";
+  }
+}
+
+class Wand {
+  constructor(mats){
+    this.name = `Wand of the ${getName(mats)}`
+    this.tier = getTier(mats)
+    this.bonus = this.tier * 10;
+    this.image = "./svg/wand-short.svg";
   }
 }
 
