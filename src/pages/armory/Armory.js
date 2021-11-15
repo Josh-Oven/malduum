@@ -16,7 +16,7 @@ const Armory = (props) => {
       <div className="chunk catalog-wrapper">
 
         <div className="shelf" onClick={e => {props.callback('storage'); props.vesselCallback('staff')}}>
-          <img src="./svg/staff-tall.svg" className="shelf-image"/>
+          <img src="./svg/staff-tall2.svg" className="shelf-image"/>
         </div>
 
         <div className="shelf" onClick={e => {props.callback('storage'); props.vesselCallback('wand')}}>
